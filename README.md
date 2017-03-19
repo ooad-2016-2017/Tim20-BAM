@@ -1,5 +1,3 @@
-# Tim20-BAM
-
 ## Parking
 
 ### Traženje slobodnog parking mjesta
