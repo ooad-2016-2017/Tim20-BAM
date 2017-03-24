@@ -8,15 +8,22 @@
 
 ## Napisati opis teme, indentificirati i opisati procese u sistemu, navesti funkcionalnosti sistema, identificirati aktere u sistemu
 
-### Podnaslov Opis Teme
+### Opis Teme
 
 #### Svrha sistema je olakšano traženje parking mjesta u okolini u kojoj se korisnik nalazi. Problem koji korisnik može imati jeste u slučaju otežanog saobraćajnog prometa, korisnik može lahko pronaći slobodno parking mjesto. Sistem će korisniku pronaći slobodno parking mjesto. Korisnik upotrebom sistema štedi na vremenu, olakšava boravak u gradu i omogućava efikasan pronalazak parking mjesta.
 
-### Podnaslov Procesi
+### Procesi
 
-#### Korisnik u GPS programu pokreće sistem. Sistem na osnovu željene lokacije pronalazi i izlistava parkinge sa slobodnim parking mjestima sortirane po udaljenosti od odabrane lokacije. Nakon odabira parkinga, izlistavaju se informacije o parkingu i u slučaju da korisniku odgovara odabrani parking, navigacija se postavlja do odabranog parkinga.
+#### Unošenje GPS lokacije u sistem
+##### Korisnik unosi određenu GPS lokaciju u sistem. Sistem pronalazi obližnje parkinge u fiksiranom ili unesenom radijusu koji imaju slobodna mjesta. U slučaju da nijedan parking nije slobodan ili ne postoji parking u zadatom radijusu, korisniku se dozvoljava ponovni unos GPS lokacije.
 
-### Podnaslov Funkcionalnosti Sistema
+#### Izlistavanje slobodnih parking mjesta
+##### Nakon uspješno odabrane GPS lokacije, sistem izlistava najbliže parkinge sortirane po udaljenosti. Korisnik može uključiti navigaciju prema određenom parkingu, kao i informacije od određenom parkingu. Informacije o parkingu govore gdje se nalazi, koliko ima slobodnih mjesta i koji je tip parkinga.
+
+#### Navigacija ka parkingu
+##### Nakon što korisnik odabere željeni parking, sistem preusmjerava navigaciju prema željenom parkingu. Time korisnik uspješno dolazi na željeni parking
+
+### Funkcionalnosti Sistema
 
 #### Funkcionalosti sistema su:
 - Pronalazak parkinga sa slobodnim parking mjestom
