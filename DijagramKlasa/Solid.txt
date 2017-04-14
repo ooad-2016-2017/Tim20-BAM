@@ -1,0 +1,20 @@
+1. Princip pojedinaène odgovornosti 
+Pošto su klase koje smo obradili u našoj aplikaciji veæ podijeljene na više manjih klasa, jedina klasa gdje bi mogli uvesti princip pojedinaène odgovornosti bi bila klasa Parking.
+U tom sluèaju, pošto se ta klasa sastoji od osnovnih podataka koje svaki parking mora da ima, klasa Parking bi se mogla podijeliti na više manjih klasa, ali moje mišljenje je da se ova klasa ne bi trebala dijeliti jer je kao cjelina jednostavnija za razumijevanje. 
+Zbog toga smatramo da princip nije narušen u ovom sluèaju.
+
+2. Otvoreno zatvoren princip
+Otvoreno zatvoren princip bi u ovom sluèaju mogao biti narušen, posebno kod klase Parking.
+Klasa Parking kao jedna od osnovnih klasa ove aplikacije bi imala poteškoæa pri povezivanju sa bazom podataka. Ukoliko bi se promijenila forma klase Parking, došlo bi do problema otvorenog zatvorenog principa.
+
+3. Liskov princip zamjene
+S obzirom da svaka od izvedenih klasa implementira i koristi sve metode koje se nalaze u njihovim roditeljskim klasama, ovaj princip je ispoštovan u našem sistemu. 
+
+4. Princip inverzije zavisnosti 
+Nijedna klasa ovog sistema nije izvedana iz konkretne klase ili klase za koju postoji moguænost da æe biti modificirana u buduænosti. Jedina roditeljska klasa u sistemu je klasa
+Osoba koja je apstraktna i za koju se znamo da neæe zahtijevati dodatne modifikacijem, stoga zakljuèujemo da je princip ispoštavan.
+
+5. Princip izoliranja interfejsa
+Iz dijagrama klasa možemo primijetiti da nijedna klasa u našem sistemu ne predstavlja tzv. "debelu" klasu. 
+Na osnovu uloge koja je dodijeljena korisniku pri registrovanju u sam sistem, 
+nude mu se odgovarajuci interfejsi i na taj nacin je onemogucen pristup dijelovima sistema koji nisu u vezi sa njegovom ulogom.
