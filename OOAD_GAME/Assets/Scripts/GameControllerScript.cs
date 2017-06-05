@@ -29,8 +29,9 @@ public class GameControllerScript : MonoBehaviour {
 
 	void FixedUpdate(){
 		preostalo_vrijeme -= Time.deltaTime;
-		if(preostalo_vrijeme < 0)
+		if (preostalo_vrijeme < 0) {
 			preostalo_vrijeme = 0;
+		}
 		UpdateText();
 	}
 
